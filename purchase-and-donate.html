@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/purchase.css">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0 >
+    <title> The Wonder Of Asia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto&display=swap" rel="stylesheet">
+
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/logo_3.jpg" color="#36a336">
+    <link rel="shortcut icon" href="images/fav_2.png">
+    <meta name="msapplication-TileColor" content="#36a336">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-------------------------------------Header section-------------------------------------------------------->
+    <section class="header">
+
+        <nav>
+            <a href="index.html"><img src="images/background45jpg.jpg" alt="logoicon"></a>
+
+            <div class="navigation_links" id="navigationLinks">
+                <br><i class="dz-close-r" onclick="hideMenu()"></i><br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li> <a href="wildlife.html">Wildlife Attractions</a></li> 
+                    <li><a href="beache.html">Beaches</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="heritage_1.html">Cultural Heritage Polonnaruwa</a></li>
+                    <li><a href="heritage-2.html">Cultural Heritage Anuradhapura</a></li>
+                    <li><a href="purchase-and-donate.html">Purchase and Donate</a></li>
+                   
+                    
+                </ul>
+                
+            </div>
+
+                <i class="dz-menu-boxed" onclick="showMenu()"></i>
+
+        </nav>
+
+        <section class="types-of-animals" id="types-of-animals">
+
+           
+            
+    
+            <div class="row">
+               
+                <div class="animals-col">
+                    <h1>Vintage Home Gallery</h1>
+                
+                <img src="images/purch_1.jpg" class="center" height="200" width="80">
+               
+                <button><a href="http://www.facebook.com/vintagecolombo" class="hero-btn">Buy NOW</a></button>
+                   
+                </div>
+    
+                <div class="animals-col">
+                    <h1>The Antique Gallery</h1>
+                
+                    <img src="images/purch_2.jpg" class="center" height="200" width="80">
+                   
+                    <button><a href="https://www.facebook.com/the.antique.gallery.kohuwala/" class="hero-btn">Buy Now</a></button>
+                  </div>
+                 
+               
+    
+                <div class="animals-col">
+                    <h1>Country Life Sri Lanka</h1>
+                
+                    <img src="images/purch_3.jpg" class="center"height="200" width="80">
+                
+                    <button><a href="https://countrylife-sri-lanka.business.site/" class="hero-btn">Buy Now</a></button>
+                </div>
+
+               
+    
+                
+          
+              
+
+        </section>
+
+
+
+    </section>
+    <div class="content-box2">
+             <div class="row2">
+
+        <div class="content-col2" id="content-col12" >
+            <h1>A Meal for a Animal</h1>
+                    <img src="images/don_2.jpg" class="center"height="200" width="300">
+                    <p>Experience how rescuing food is changing lives around the world.</p><br>
+        </div>
+        <div class="content-col2" id="content-col12" >
+            <h1>Food for an Innocent child</h1>
+            <img src="images/don_3.jpg" class="center"height="200" width="300">
+            <p>Help us solve the hunger problems .Give $30 and you can give one child abroad meals for one year.</p><br>
+        </div>
+        <div class="content-col2" id="content-col12" >
+            <h1>They also Love to Learn</h1>
+            <img src="images/don_4.jpg" class="center"height="200" width="300">
+            <p>They also want to build a beautiful future . We will help as much as we can</p><br>
+        </div>
+
+             </div>
+    </div>
+    
+  
+    <div class="donation-form">
+        <form action="" class="contact-col" id="frmDonation">
+            <fieldset>
+            <label for="nameinput"></label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Enter your email" required >
+           
+            <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label>
+            <select name="language" class="custom-select" id="fixedDonatons" multiple >
+                <option value="100">LKR 100 </option>
+                <option value="500">LKR 500 </option>
+                <option value="1000">LKR 1000 </option>
+                <option value="2500">LKR 2500 </option>
+                <option value="5000">LKR 5000 </option>
+                
+              </select>
+            </fieldset>  
+            
+        </form>
+        <fieldset>
+        <label for="Donations" id="fixedDonations" class="lbdate">Payment Method</label>
+        <form class="paymentDetails" action=""  method="post" >
+            <div class="inputBox">
+                <span>Card number</span>
+                <label for="cardNumber"></label>
+                <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+            </div>
+            <div class="inputBox">
+                <span>Card holder</span>
+                <label for="cardholder"></label>
+                <input type="text" id="cardHolder" class="card-holder-input">
+            </div>
+
+            
+            <div class="flexbox">
+                <div class="inputBox" >
+                    <span>expiration mm</span>
+                    <select name="" id="monthInput" class="month-input">
+                        <option value="month" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>expiration yy</span>
+                    <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                        <option value="year" selected disabled>Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>  
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+                <div class="inputBox" id="cvvInput">
+                    <span>cvv</span>
+                    <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+                </div>
+            </div>
+            <input type="button" value="Donate" id="donateBtn" class="submit-btn"  onclick="inputValidation();">
+        </fieldset>
+        </form>
+
+
+    </div> 
+    
+       
+           
+                    
+  </div>
+                 
+
+
+
+<!----------------------------------------Footer Section---------------------------------------->
+
+<footer>
+    <div class="container">
+        
+        <div class="about-dehiwala-zoo">
+            <h2>About Us</h2>
+            <p>A lush green sanctuary that is home to a variety of exotic animals, birds, and butterflies. It is one of Asia's oldest zoos,
+                 having opened in 1936 and been a pioneer of the open zoo concept.</p> 
+            <ul class="social-icons">
+            <li> <img src="images/instagram.png"  alt=""></li>
+            <li> <img src="images/facebook.png"  alt=""></li>
+            <li> <img src="images/youtube.png" alt=""></li>
+            <li> <img src="images/twitter.png"  alt=""></li>
+            </ul>
+        </div>
+
+        <div class="quick-nav-links">
+
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="purchase-and-donate.html">Purchase and Donate</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    
+                </ul>
+        </div>
+
+
+        <div class="contact">
+
+            <h2>Contact Info</h2>
+            <ul>
+               
+                <li> 
+                    
+                     <img src="images/email.png" width="40px" height="40px" alt="">
+                     <a href="cb010220.students@gmail.com">cb010220.students@gmail.com</a>  
+                </li>
+                
+                <li> 
+                     <img src="images/phone-call.png" width="40px" height="40px" alt="">
+                    <a href="tel:+94112712751"> 071 1339 205</a>
+                </li>
+                
+                
+
+                
+               
+            </ul>
+    </div>
+
+    
+
+
+    </div>
+
+    <div class="footer-bottom">
+         &copy;  | All right reserved. | 2022 Bhagya-APIIT CB010220
+        
+    </div>
+    
+
+
+     
+
+
+<!--
+
+
+----------------------------------------------References---------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+--------main img =Article title:	sri lanka - Google Search
+Website title:	Google.com
+URL:	https://www.google.com/search?q=sri+lanka&tbm=isch&hl=en&chips=q:sri+lanka,g_1:travel:Z9fXKAeWbuY%3D,g_1:photography:cfZYx1L5bOw%3D&sa=X&ved=2ahUKEwiZs5vtz4L3AhWUi9gFHU_GAn8Q4lYoAXoECAEQIQ&biw=751&bih=678#imgrc=wV3CDUAhNr50zM
+
+main para=Article title:	Sri Lanka travel - Lonely Planet
+Website title:	Lonely Planet
+URL:	https://www.lonelyplanet.com/sri-lanka
+video=-https://www.pexels.com/search/videos/sri%20lanka/
+sub1
+img=Article title:	beaches in sri lanka - Google Search
+Website title:	Google.com
+URL:	https://www.google.com/search?q=beaches+in+sri+lanka&sxsrf=APq-WBt3s-sAj4Pm4qT8IU-iMwvYtT84Qw:1649362433340&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj5ucfv4YL3AhX58HMBHRGXDqgQ_AUoAXoECAIQAw&biw=768&bih=695&dpr=1.25
+para=Website title:	Thrillophilia.com
+URL:	https://www.thrillophilia.com/sri-lanka-beaches
+
+sub2
+img=Article title:	luxury restaurant in colombo - Google Search
+Website title:	Google.com
+URL:	https://www.google.com/search?q=luxury+restaurant+in+colombo&tbm=isch&ved=2ahUKEwjM_di2_Ib3AhWZkdgFHT9YBBMQ2-cCegQIABAA&oq=luxury+restaurant+in+colombo&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoECAAQQzoFCAAQgAQ6BAgAEBhQ8wZY3yVg8CpoAHAAeACAAfsBiAGiE5IBBTAuNS43mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=uHpRYszBMJmj4t4Pv7CRmAE&bih=696&biw=1536#imgrc=cKLoQi0x-olOWM
+para=Website title:	Thrillophilia.com
+URL:	https://www.thrillophilia.com/tours/bonanza-casino-colombo-package
+
+sub3
+img=Article title:	sri lanka tourism - Google Search
+Website title:	Google.com
+URL:	https://www.google.com/search?q=sri+lanka+tourism&sxsrf=APq-WBt3ALBd_hZp3KaAJ8EVQQRpqHp6NA:1649505537966&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj_z5T99ob3AhXQQd4KHaRqB_8Q_AUoAXoECAIQAw&biw=1536&bih=696&dpr=1.25#imgrc=GEKYmbqduPqDvM&imgdii=Iw7Jt6y-oxXkEM
+para=Website title:	Thrillophilia.com
+URL:	https://www.thrillophilia.com/countries/srilanka
+
+link1=Article title:	Sri Lanka travel advice
+Website title:	GOV.UK
+URL:	https://www.gov.uk/foreign-travel-advice/sri-lanka
+link2=Article title:	Sri Lanka travel advice
+Website title:	GOV.UK
+URL:	https://www.gov.uk/foreign-travel-advice/sri-lanka
+link3=Article title:	Sri Lanka Travel Advisory
+Website title:	Travel.state.gov
+URL:	https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sri-lanka-travel-advisory.html
+link5=Website title:	Srilankan.com
+URL:	https://www.srilankan.com/en_uk/us
+
+
+----->
+-->
+
+
+
+
+
+</footer>
+
+
+
+<script src="Javascript/main.js"> </script>
+
+
+</body>
+
+</html>
+
+
+

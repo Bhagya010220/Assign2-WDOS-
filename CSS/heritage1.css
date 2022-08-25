@@ -1,0 +1,102 @@
+body{
+    background-color: #CC7722;   
+   }
+   
+   .hl{
+       display: flex;
+       flex-direction: column;
+       background-color:brown;
+       gap: 20px;
+       margin: 50px;
+     
+   
+   }
+   
+   .h1{
+       background-color: whitesmoke;
+       padding-top: 20px;
+       border-radius: 20px;
+   
+   }
+   
+   
+   
+   p{
+       text-align: center;
+   }
+   
+   .hert img{
+       border-radius: 20px;
+       width: 90%;
+       position: relative;
+       left: 4%;
+       border: 10px whitesmoke solid;
+       padding: 10px;
+   }
+   
+   .hl2{
+       display: flex;
+      
+       justify-content: center;
+       align-items: center;
+       
+   }
+   
+   .hl2 img{
+       width: 70%;
+       flex: 50%;
+       border-radius: 20px;
+       border: 10px #6E260E solid;
+       margin: 20px;
+   }
+   body {
+       background: url(example.jpg);
+       background-position: center;
+       background-size: cover;
+     }
+     .gallery{
+       width: 1000px;
+       margin: 0 auto;
+       position: relative;
+     }
+   .gallery_photo{
+       width: 250px;
+       height: 250px;
+       border-radius: 2px;
+       box-shadow: 0 20px 40px rgba(0, 0, 0, 4);
+       position :absolute;
+       z-index: 10 ;
+       outline-offset: 20px;
+       transition: all 0.2s;
+   }
+   .gallary_photo-1{
+       top: 0;
+       left: 0;
+   }
+   .gallary_photo-2{
+       top: 0;
+       right: 0;
+       z-index: 1;
+   }
+   .gallary_photo-3{
+       top: 40;
+       left: 20;
+   }
+   .gallary_photo-4{
+       top: 60;
+       left: 40;
+   }
+   .gallary_photo-5{
+       top: 40;
+       left: 60;
+       z-index: 2;
+   }
+   .gallery_photo:hover{
+       outline: 15px solid #9A2A2A;
+       transform: scale(1.05);
+   }
+   img:hover {
+       opacity: 0.2;
+     }
+     
+   
